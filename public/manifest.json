@@ -13,21 +13,12 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Yext Extension V1",
-    "default_popup": "popup.html"
+    "default_title": "Yext Extension V1"
   },
   "permissions": [
-    "storage"
-  ],
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "run_at": "document_idle",
-      "js": [
-        "contentScript.js"
-      ]
-    }
+    "storage",
+    "tabs",
+    "scripting",
+    "activeTab"
   ]
 }
